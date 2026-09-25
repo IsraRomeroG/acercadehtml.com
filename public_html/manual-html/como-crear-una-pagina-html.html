@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+   xml:lang="es-es" lang="es-es" >
+
+<head>
+    <base href="https://acercadehtml.com/manual-html/como-crear-una-pagina-html.html" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="manual html, manual de html, html manual, tutorial html, html tutorial, manual, tutorial, etiquetas html, etiquetas, articulos html, ejemplos html, tutorial, lenguaje html, crear paginas web, crear webs, crear paginas html" />
+	<meta name="author" content="Israel Romero" />
+	<meta name="description" content="Manual de HTML. En este manual encontrarás artículos que te ayudarán a aprender HTML para crear tus propias páginas web." />
+	<title>Cómo crear una página HTML - Acerca de HTML</title>
+    <link rel="stylesheet" href="/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="/css/light.css" type="text/css" />
+    <link rel="stylesheet" href="/css/articles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<header>
+    <div id="header">
+    	<div id="logoDiv">
+            <a href="/"><img src="/images/logo.png" alt="Acerca de HTML" id="logoImg" /></a>
+        </div><nav>
+    	<ul><li><a href="/">Inicio</a></li><li class="actual"><a href="/manual-html.html">Manual HTML</a></li><li><a href="/etiquetas-html.html">Etiquetas HTML</a></li></ul>
+    	</nav>
+    </div>
+</header>
+<div id="up"></div>
+<div id="page">
+    <div id="contenido">
+    	<div aria-label="Breadcrumbs" role="navigation">
+			<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+				<li>Está aquí: &#160;</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/"><span itemprop="name">Inicio</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="1">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/manual-html.html"><span itemprop="name">Manual HTML</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="2">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<span itemprop="name">Cómo crear una página HTML</span>
+					<meta itemprop="position" content="3">
+				</li>
+			</ul>
+		</div>
+
+		<article itemscope itemtype="https://schema.org/Article">
+		<meta itemprop="inLanguage" content="es-ES" />
+		<h1 itemprop="headline">Cómo crear una página HTML</h1>
+	<div itemprop="articleBody">
+		<p><b>Definición:</b> Una página HTML es un documento o archivo de texto que tienen la extensión .html o .htm, este tipo de archivo se puede abrir con un editor de textos para editar el código o con un navegador de Internet para visualizar la página que resulte del código HTML escrito.</p>
+<p>Para desarrollar una página web en HTML es necesario crear un documento HTML.</p>
+<p>Básicamente un documento HTML es un archivo de texto que tienen la extensión .html o .htm, en este documento se escribe todo el texto y las etiquetas HTML necesarias para la creación de una página, al texto escrito en el documento HTML se le llama código HTML. Un documento HTML se puede generar con cualquier editor de textos simple como el bloc de notas de Windows o Gedit de Linux.</p>
+<p>Mostraré un ejemplo de como crear un documento HTML con Windows y el Bloc de Notas.</p>
+ 
+<p>Al guardar un documento en el Bloc de Notas se guarda por default con una extensión .txt pero para este caso nosotros queremos un .html y no un .txt, para esto sólo basta con agregar la extensión al momento de asignarle nombre al archivo como se muestra en la siguiente imagen:</p>
+<p style="text-align: center;"><img style="max-width: 99%;" title="guardar como html" src="/images/articles/como-crear-una-pagina-html/guardar-como-html.png" alt="guardar como html" /></p>
+<p>Una vez echo esto tendremos un archivo HTML, este archivo por su extensión .html ya es una página web, notarás que el icono de este archivo es el icono del navegador de Internet que utilizas por default y se abre al hacer doble clic en él con el navegador como una pagina web cualquiera. Si abrimos el archivo HTML que acabamos de crear con el navegador se abrirá una página completamente en blanco.</p>
+<p>Hasta el momento tenemos una pagina web vacía, así que para visualizar algo en el navegador al momento de abrirla tendremos que agregar algo de texto.</p>
+<p>Para editarlo tendremos que hacer clic derecho y la opción "abrir con" para elegir el bloc de notas o cualquier otro editor de textos y de esta manera poder editar el código fuente de nuestra página.</p>
+<p style="text-align: center;"><img style="max-width: 99%;" title="abrir con bloc de notas" src="/images/articles/como-crear-una-pagina-html/abrir-con-bloc-de-notas.png" alt="abrir con bloc de notas" /></p>
+<p>Una vez hecho esto puedes intentar agregar el texto que se te ocurra, luego guardar el archivo e intentar volver a abrir la pagina con el navegador, si haces esto se mostrará el texto que escribiste.</p>
+<p>Ejemplo escribiendo "Texto de prueba":</p>
+<p style="text-align: center;"><img style="max-width: 99%;" title="prueba pagina html" src="/images/articles/como-crear-una-pagina-html/prueba-pagina-html.png" alt="prueba pagina html" /></p>
+<p>Resultado al abrir con el navegador:</p>
+<p style="text-align: center;"><img style="max-width: 99%;" title="resultado prueba pagina html" src="/images/articles/como-crear-una-pagina-html/resultado-prueba-pagina-html.png" alt="resultado prueba pagina html" /></p>
+<p>Es importante mencionar que (aunque funciona) esta no es la manera correcta de escribir texto en HTML, hay un mínimo de etiquetas necesarias que deberíamos agregar para definir la estructura básica de un documento HTML.</p>
+<p>Escribiré el HTML necesario para nuestra página de ejemplo con el "Texto de prueba" y después explicare el código:</p>
+<div class="cajacode"><code>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />    &lt;head&gt;<br />        &lt;title&gt;Un titulo&lt;/title&gt;<br />    &lt;/head&gt;<br />    &lt;body&gt;<br />        Texto de prueba<br />    &lt;/body&gt;<br />&lt;/html&gt;</code></div>
+<p>Esta es la estructura básica mínima de un documento HTML, la primera línea indica el tipo de documento, no quiero profundizar mucho en la explicación de esta etiqueta solo mencionar que anteriormente había etiquetas DOCTYPE muy enredadas y confusas, algo así como: <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code>. En HTML5 solo hay una única etiqueta DOCTYPE que esta que usé en el ejemplo, por lo que está etiqueta le indica al navegador que usaremos el estándar HTML5.</p>
+<p>La segunda línea (<code>&lt;html&gt;</code>) indica el inicio del documento HTML, esta etiqueta tiene su respectiva etiqueta de cierre (<code>&lt;/html&gt;</code>) al final de nuestro documento.</p>
+<p>Después sigue la etiqueta <code>&lt;head&gt;</code> que al igual tiene su etiqueta de cierre <code>&lt;/head&gt;</code>, estás etiquetas indican la cabecera del documento HTML.</p>
+<p>Dentro del HEAD encontramos la etiqueta <code>&lt;title&gt;</code> con su etiqueta de cierre <code>&lt;/title&gt;</code> dentro de estás etiquetas se escribirá el título de nuestra página.</p>
+<p>Después pasamos al cuerpo del documento que está delimitado por las etiquetas <code>&lt;body&gt;</code> y <code>&lt;/body&gt;</code> dentro del cuerpo del documento es donde vamos a escribir todo aquello que se visualizará en el navegador al abrir la página, en este caso lo que se visualiza es el "Texto de prueba".</p>
+<p>Como se observa en el código de ejemplo, un documento HTML se divide en dos partes, el HEAD y el BODY, en la parte del HEAD va la información de la página, cosas como el título, descripción, idioma, autor, entre otras mas dirigidas principalmente a los buscadores y navegadores, pero la parte dirigida a los usuarios está en el BODY, como su nombre lo dice es el cuerpo de la página, es donde va el contenido, donde se organiza y se muestran el texto, los colores, las imágenes y todo lo visual.</p>
+<p>Ahora ya sabemos crear un documento HTML con el bloc de notas de windows, aunque cabe aclarar que para fines reales de desarrollo usar el bloc de notas resulta ser muy anticuado pues el bloc de notas es un editor muy sencillo y bastante limitado en comparación con otros programas de edición mas potentes que nos permiten mayores funcionalidades al momento de escribir código HTML, por el momento me parece bien concluir con este artículo.</p>
+<div class="antsig"><b>Artículo Anterior:</b><br /><a href="/manual-html/que-son-las-etiquetas-html.html">¿Que son las etiquetas HTML?</a></div>
+<div class="antsig"> </div>
+<div class="antsig"><b>Siguiente Artículo:</b><br /><a href="/manual-html/etiqueta-head-cabecera-de-una-pagina-html.html">Etiqueta HEAD - Cabecera de una página HTML</a></div>
+	</div>
+	</article>
+
+	</div><aside id="aside">
+    </aside>
+    <script defer src="/js/ads.js"></script>
+</div>
+<div id="down"></div>
+<footer>
+    <p>© Copyright - Acerca de HTML - Todos los derechos reservados<br />
+    Queda prohibida la distribución total o parcial del contenido de este sitio web sin el previo consentimiento del autor.</p>
+</footer>
+</body>
+</html>

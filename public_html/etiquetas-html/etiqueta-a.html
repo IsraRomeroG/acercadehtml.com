@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+   xml:lang="es-es" lang="es-es" >
+
+<head>
+    <base href="https://acercadehtml.com/etiquetas-html/etiqueta-a.html" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="etiqueta a html, etiqueta a en html, a html, a en html, etiqueta a, html etiqueta a, atributos etiqueta a, etiqueta a atributos, etiqueta  html, etiqueta  en html, html, en html, etiqueta, html etiqueta, atributos etiqueta, etiqueta  atributos" />
+	<meta name="author" content="Israel Romero" />
+	<meta name="description" content="La etiqueta  es uno de los elementos más importantes del lenguaje HTML, esta etiqueta sirve para convertir texto normal en hipertexto, es decir, sirve para crear enlaces (links)." />
+	<title>Etiqueta a - Enlaces HTML - Acerca de HTML</title>
+    <link rel="stylesheet" href="/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="/css/light.css" type="text/css" />
+    <link rel="stylesheet" href="/css/articles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<header>
+    <div id="header">
+    	<div id="logoDiv">
+            <a href="/"><img src="/images/logo.png" alt="Acerca de HTML" id="logoImg" /></a>
+        </div><nav>
+    	<ul><li><a href="/">Inicio</a></li><li><a href="/manual-html.html">Manual HTML</a></li><li class="actual"><a href="/etiquetas-html.html">Etiquetas HTML</a></li></ul>
+    	</nav>
+    </div>
+</header>
+<div id="up"></div>
+<div id="page">
+    <div id="contenido">
+    	<div aria-label="Breadcrumbs" role="navigation">
+			<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+				<li>Está aquí: &#160;</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/"><span itemprop="name">Inicio</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="1">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/etiquetas-html.html"><span itemprop="name">Etiquetas HTML</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="2">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<span itemprop="name">Etiqueta a - Enlaces HTML</span>
+					<meta itemprop="position" content="3">
+				</li>
+			</ul>
+		</div>
+
+		<article itemscope itemtype="https://schema.org/Article">
+		<meta itemprop="inLanguage" content="es-ES" />
+		<h1 itemprop="headline">Etiqueta a - Enlaces HTML</h1>
+	<div itemprop="articleBody">
+		<p>La <strong>etiqueta &lt;a&gt;</strong> es uno de los elementos más importantes del lenguaje HTML, esta etiqueta sirve para convertir texto normal en hipertexto, es decir, sirve para crear enlaces (links).</p>
+<p>Con la etiqueta &lt;a&gt; pueden realizarse enlaces hacia documentos externos de cualquier tipo, generalmente es usada para definir enlaces hacia otras páginas web pero su uso es más amplio y no necesariamente se tiene que realizar un enlace hacia un documento externo, pues la etiqueta &lt;a&gt; permite realizar enlaces internos dentro de un mismo documento, es decir, enlazar un texto hacia una parte específica del mismo documento que lo incluye y de este modo poder navegar dentro del documento.</p>
+ 
+<h2>Ejemplo de uso:</h2>
+<div class="cajacode"><code>&lt;a href=”http://www.acercadehtml.com/”&gt;Texto del enlace&lt;/a&gt;</code></div>
+<h2>Resultado:</h2>
+<div class="cajaresultado"><a href="http://www.acercadehtml.com/">Texto del enlace</a></div>
+<p>Si haces clic en el enlace del ejemplo te llevará a la página principal (www.acercadehtml.com).</p>
+<h2>Atributos:</h2>
+<div class="tab">
+<p><b>Atributo:</b> charset<br /><b>Descripción:</b> Define la codificación de caracteres del documento al que se enlaza. Atributo obsoleto para HTML5.<br /><b>Valor:</b> Codificación de caracteres. Ejemplo: UTF-8, ISO-8859-1, etc.</p>
+<p><b>Atributo:</b> coords<br /><b>Descripción:</b> Especifica las coordenadas de un enlace. Atributo obsoleto para HTML5.<br /><b>Valor:</b> coordenadas.</p>
+<p><b>Atributo:</b> download<br /><b>Descripción:</b> Especifica las coordenadas de un enlace. Atributo nuevo de HTML5.<br /><b>Valor:</b> nombre del archivo.</p>
+<p><b>Atributo:</b> href<br /><b>Descripción:</b> Especifica la dirección destino del enlace.<br /><b>Valor:</b> URL o ubicación relativa.</p>
+<p><b>Atributo:</b> hreflang<br /><b>Descripción:</b> Especifica el idioma del documento enlazado.<br /><b>Valor:</b> Código del lenguaje.</p>
+<p><b>Atributo:</b> media<br /><b>Descripción:</b> Especifica el dispositivo o medio para el cual está optimizado el enlace. Atributo nuevo de HTML5.<br /><b>Valor:</b> media query.</p>
+<p><b>Atributo:</b> name<br /><b>Descripción:</b> Define el nombre ancla del texto. Atributo obsoleto para HTML5.<br /><b>Valor:</b> nombre deseado.</p>
+<p><b>Atributo:</b> rel<br /><b>Descripción:</b> Especifica una relación entre el documento actual y el documento enlazado.<br /><b>Valores Posibles:</b> alternate, author, bookmark, help, license, next, nofollow, noreferrer, prefetch, prev, search, tag.</p>
+<p><b>Atributo:</b> rev<br /><b>Descripción:</b> Especifica una relación entre el documento enlazado y el documento actual. Atributo obsoleto para HTML5.<br /><b>Valores Posibles:</b> alternate, appendix, bookmark, chapter, contents, copyright, friend, glossary, help, index, licence, next, nofollow, prev, section, start, stylesheet, subsection, tag.</p>
+<p><b>Atributo:</b> shape<br /><b>Descripción:</b> Especifica la forma de un área. Atributo obsoleto para HTML5.<br /><b>Valores Posibles:</b> default, rect, circle, poly.</p>
+<p><b>Atributo:</b> target<br /><b>Descripción:</b> Especifica la forma de un área.<br /><b>Valores Posibles:</b> _blank, _parent, _self, _top.</p>
+<p><b>Atributo:</b> type<br /><b>Descripción:</b> Especifica el tipo de contenido del documento enlazado.<br /><b>Valores Posibles:</b> tipo de contenido.</p>
+</div>
+	</div>
+	</article>
+
+	</div><aside id="aside">
+    </aside>
+    <script defer src="/js/ads.js"></script>
+</div>
+<div id="down"></div>
+<footer>
+    <p>© Copyright - Acerca de HTML - Todos los derechos reservados<br />
+    Queda prohibida la distribución total o parcial del contenido de este sitio web sin el previo consentimiento del autor.</p>
+</footer>
+</body>
+</html>

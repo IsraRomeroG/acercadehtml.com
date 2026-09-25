@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+   xml:lang="es-es" lang="es-es" >
+
+<head>
+    <base href="https://acercadehtml.com/manual-html/colores-html-hexadecimal.html" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="manual html, manual de html, html manual, tutorial html, html tutorial, manual, tutorial, etiquetas html, etiquetas, articulos html, ejemplos html, tutorial, lenguaje html, crear paginas web, crear webs, crear paginas html" />
+	<meta name="author" content="Israel Romero" />
+	<meta name="description" content="Manual de HTML. En este manual encontrarás artículos que te ayudarán a aprender HTML para crear tus propias páginas web." />
+	<title>Colores en HTML - Hexadecimal - Acerca de HTML</title>
+	<link rel="stylesheet" href="/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="/css/light.css" type="text/css" />
+    <link rel="stylesheet" href="/css/articles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<header>
+    <div id="header">
+    	<div id="logoDiv">
+            <a href="/"><img src="/images/logo.png" alt="Acerca de HTML" id="logoImg" /></a>
+        </div><nav>
+    	<ul><li><a href="/">Inicio</a></li><li class="actual"><a href="/manual-html.html">Manual HTML</a></li><li><a href="/etiquetas-html.html">Etiquetas HTML</a></li></ul>
+    	</nav>
+    </div>
+</header>
+<div id="up"></div>
+<div id="page">
+    <div id="contenido">
+    	<div aria-label="Breadcrumbs" role="navigation">
+			<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+				<li>Está aquí: &#160;</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/"><span itemprop="name">Inicio</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="1">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/manual-html.html"><span itemprop="name">Manual HTML</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="2">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<span itemprop="name">Colores en HTML - Hexadecimal</span>
+					<meta itemprop="position" content="3">
+				</li>
+			</ul>
+		</div>
+
+		<article itemscope itemtype="https://schema.org/Article">
+		<meta itemprop="inLanguage" content="es-ES" />
+		<h1 itemprop="headline">Colores en HTML - Hexadecimal</h1>
+	<div itemprop="articleBody">
+<p>En HTML se puede agregar color a elementos visibles como textos, enlaces, bordes, formularios, etc.</p>
+<p>Un color en HTML se puede expresar de dos maneras:</p>
+<p><b>- Opción 1</b>: Con el nombre del color en inglés</p>
+<p><b>- Opción 2</b>: Con un numero hexadecimal de seis dígitos</p>
+<p>La primera opción parece sencilla, y de hecho lo es, pues si queremos un color rojo simplemente tendremos que poner "red" o si queremos azul "blue", etc, pero encontramos un pequeño inconveniente, pues existe una infinidad de colores, entonces, ¿se podrá llamar a cada color por su nombre? ¿todos los colores tienen nombre?</p>
+<p>Por ejemplo, ¿podrías decirme el nombre de este color?</p>
+<table>
+<tbody>
+<tr>
+<td style="background: lime; height: 20px; width: 100px; border: 1px solid #000;"> </td>
+</tr>
+</tbody>
+</table>
+<p>Seguramente dirías que es verde ¿cierto?, pero si colocáramos <i>green</i> (verde) en nuestro código HTML nos saldría este otro color:</p>
+<table>
+<tbody>
+<tr>
+<td style="background: green; height: 20px; width: 100px; border: 1px solid #000;"> </td>
+</tr>
+</tbody>
+</table>
+ 
+<p>Entonces el primer color no es verde (green), mas bien es una tonalidad mas clara del verde, en este caso, el color si tiene un nombre, se llama <i>lime</i> (lima en español), pero no siempre vamos a hallar un nombre para un color, pues en HTML disponemos de una amplia paleta de 16,777,216 colores, por esto tenemos la <b>Opción 2</b> con la que escribiremos números hexadecimales para representar los colores en HTML.</p>
+<p>Pero para entender bien bien pienso que es necesario conocer el sistema numérico hexadecimal y su importancia en HTML, por esto me parece buen momento para hacer una pequeña explicación del sistema hexadecimal para aquellos que lo desconozcan.</p>
+<p><b>Hexadecimal:</b></p>
+<p>Es un sistema de numeración de base 16, es decir que utiliza 16 símbolos para la representación de cantidades numéricas, estos símbolos son las 10 números o cifras del sistema decimal (0-9) y 6 letras del abecedario (A-F), siendo el 0 el de menor valor y la letra F el de mayor valor. Comparándolo con el sistema decimal podemos observar el valor de cada cifra en la siguiente tabla:</p>
+<table>
+<thead>
+<tr>
+<th>Número en Decimal</th>
+<th>Equivalente en Hexadecimal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>9</td>
+</tr>
+<tr>
+<td>10</td>
+<td>A</td>
+</tr>
+<tr>
+<td>11</td>
+<td>B</td>
+</tr>
+<tr>
+<td>12</td>
+<td>C</td>
+</tr>
+<tr>
+<td>13</td>
+<td>D</td>
+</tr>
+<tr>
+<td>14</td>
+<td>E</td>
+</tr>
+<tr>
+<td>15</td>
+<td>F</td>
+</tr>
+</tbody>
+</table>
+<p>Entonces se puede observar que con una sola cifra hexadecimal se pueden formar 16 números, que van desde el 0 decimal hasta el 15 decimal, para formar números mas grandes se tendrá agregar mas cifras de manera similar a como se hace con el sistema decimal. A modo de ejemplo y para aclarar mas el tema les dejo una tabla con los primeros números del sistema hexadecimal que se pueden formar con dos cifras.</p>
+<table>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>D</td>
+<td>E</td>
+<td>F</td>
+</tr>
+<tr>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>1A</td>
+<td>1B</td>
+<td>1C</td>
+<td>1D</td>
+<td>1E</td>
+<td>1F</td>
+</tr>
+<tr>
+<td>20</td>
+<td>21</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+<td>29</td>
+<td>2A</td>
+<td>2B</td>
+<td>2C</td>
+<td>2D</td>
+<td>2E</td>
+<td>2F</td>
+</tr>
+<tr>
+<td>30</td>
+<td>31</td>
+<td>32</td>
+<td>33</td>
+<td>34</td>
+<td>35</td>
+<td>36</td>
+<td>37</td>
+<td>38</td>
+<td>39</td>
+<td>3A</td>
+<td>3B</td>
+<td>3C</td>
+<td>3D</td>
+<td>3E</td>
+<td>3F</td>
+</tr>
+<tr>
+<td>40</td>
+<td>41</td>
+<td>42</td>
+<td>43</td>
+<td>44</td>
+<td>45</td>
+<td>46</td>
+<td>47</td>
+<td>48</td>
+<td>49</td>
+<td>4A</td>
+<td>4B</td>
+<td>4C</td>
+<td>4D</td>
+<td>4E</td>
+<td>4F</td>
+</tr>
+<tr>
+<td>50</td>
+<td>51</td>
+<td>52</td>
+<td>53</td>
+<td>54</td>
+<td>55</td>
+<td>56</td>
+<td>57</td>
+<td>58</td>
+<td>59</td>
+<td>5A</td>
+<td>5B</td>
+<td>5C</td>
+<td>5D</td>
+<td>5E</td>
+<td>5F</td>
+</tr>
+<tr>
+<td>60</td>
+<td>61</td>
+<td>62</td>
+<td>63</td>
+<td>64</td>
+<td>65</td>
+<td>66</td>
+<td>67</td>
+<td>68</td>
+<td>69</td>
+<td>6A</td>
+<td>6B</td>
+<td>6C</td>
+<td>6D</td>
+<td>6E</td>
+<td>6F</td>
+</tr>
+<tr>
+<td>70</td>
+<td>71</td>
+<td>72</td>
+<td>73</td>
+<td>74</td>
+<td>75</td>
+<td>76</td>
+<td>77</td>
+<td>78</td>
+<td>79</td>
+<td>7A</td>
+<td>7B</td>
+<td>7C</td>
+<td>7D</td>
+<td>7E</td>
+<td>7F</td>
+</tr>
+<tr>
+<td>80</td>
+<td>81</td>
+<td>82</td>
+<td>83</td>
+<td>84</td>
+<td>85</td>
+<td>86</td>
+<td>87</td>
+<td>88</td>
+<td>89</td>
+<td>8A</td>
+<td>8B</td>
+<td>8C</td>
+<td>8D</td>
+<td>8E</td>
+<td>8F</td>
+</tr>
+<tr>
+<td>90</td>
+<td>91</td>
+<td>92</td>
+<td>93</td>
+<td>94</td>
+<td>95</td>
+<td>96</td>
+<td>97</td>
+<td>98</td>
+<td>99</td>
+<td>9A</td>
+<td>9B</td>
+<td>9C</td>
+<td>9D</td>
+<td>9E</td>
+<td>9F</td>
+</tr>
+<tr>
+<td>A0</td>
+<td>A1</td>
+<td>A2</td>
+<td>A3</td>
+<td>A4</td>
+<td>A5</td>
+<td>A6</td>
+<td>A7</td>
+<td>A8</td>
+<td>A9</td>
+<td>AA</td>
+<td>AB</td>
+<td>AC</td>
+<td>AD</td>
+<td>AE</td>
+<td>AF</td>
+</tr>
+<tr>
+<td>B0</td>
+<td>B1</td>
+<td>B2</td>
+<td>B3</td>
+<td>B4</td>
+<td>B5</td>
+<td>B6</td>
+<td>B7</td>
+<td>B8</td>
+<td>B9</td>
+<td>BA</td>
+<td>BB</td>
+<td>BC</td>
+<td>BD</td>
+<td>BE</td>
+<td>BF</td>
+</tr>
+<tr>
+<td>C0</td>
+<td>C1</td>
+<td>C2</td>
+<td>C3</td>
+<td>C4</td>
+<td>C5</td>
+<td>C6</td>
+<td>C7</td>
+<td>C8</td>
+<td>C9</td>
+<td>CA</td>
+<td>CB</td>
+<td>CC</td>
+<td>CD</td>
+<td>CE</td>
+<td>CF</td>
+</tr>
+<tr>
+<td>D0</td>
+<td>D1</td>
+<td>D2</td>
+<td>D3</td>
+<td>D4</td>
+<td>D5</td>
+<td>D6</td>
+<td>D7</td>
+<td>D8</td>
+<td>D9</td>
+<td>DA</td>
+<td>DB</td>
+<td>DC</td>
+<td>DD</td>
+<td>DE</td>
+<td>DF</td>
+</tr>
+<tr>
+<td>E0</td>
+<td>E1</td>
+<td>E2</td>
+<td>E3</td>
+<td>E4</td>
+<td>E5</td>
+<td>E6</td>
+<td>E7</td>
+<td>E8</td>
+<td>E9</td>
+<td>EA</td>
+<td>EB</td>
+<td>EC</td>
+<td>ED</td>
+<td>EE</td>
+<td>EF</td>
+</tr>
+<tr>
+<td> F0 </td>
+<td> F1 </td>
+<td> F2 </td>
+<td> F3 </td>
+<td> F4 </td>
+<td> F5 </td>
+<td> F6 </td>
+<td> F7 </td>
+<td> F8 </td>
+<td> F9 </td>
+<td> FA </td>
+<td> FB </td>
+<td> FC </td>
+<td> FD </td>
+<td> FE </td>
+<td> FF </td>
+</tr>
+</tbody>
+</table>
+<p>Un total de 256 números posibles con dos cifras que van desde el 0 hasta el 255 decimal. Ahora vamos a ver como se utiliza esto en HTML.</p>
+<p><b>Volvemos a los colores HTML:</b></p>
+<p>Entonces en lugar de colocar el nombre del color en ingles tendremos que escribir el hexadecimal del color deseado, algo como esto:<i>#4488FF</i> lo que da como resultado el siguiente color:</p>
+<table>
+<tbody>
+<tr>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<p><b>Pero que significan #4488ff?</b></p>
+<p>Bueno pues son seis dígitos que representan el color, estos seis dígitos se dividen en tres pares (<i>44-88-FF</i>), con los cuales podemos representar un color por medio de los colores primarios Rojo, Verde y Azul haciendo uso de la paleta de colores RGB (Red, Green, Blue), el primer par (<i>44</i>) corresponde a la R (Red o Rojo en español) el par de en medio (<i>88</i>) corresponde a la G (Green o Verde) y los últimos dos (<i>FF</i>) son representativos de la parte Blue/Azul (#4488FF), entonces con estos 3 colores primarios vamos a formar el color deseado, indicando con cada par de números la cantidad de rojo, la cantidad de verde y la cantidad de azul necesaria para formar cualquier color, entonces mientras mayor sea el numero formado por un par de dígitos correspondientes a un color, mayor será la cantidad o intensidad de ese color, entonces si yo colocara <i>#000000</i> (ausencia de colores) tendría como resultado un color negro, y si colocara <i>#FFFFFF</i> (la mayor cantidad de color) tendría como resultado un blanco. justamente en la siguiente imagen podemos observar el efecto de estos tres colores primarios al combinarse:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/articles/colores-html-hexadecimal/colores-html.png" alt="" /></p>
+<p>Ahora bien, estos códigos de colores HTML se usan como propiedades de atributos de algunas etiquetas, como las etiquetas para los enlaces o etiquetas relacionadas con el texto para indicar colores de letra, en fin lo importante es entender el significado de los códigos de colores para poder aplicarlos más adelante.</p>
+<div class="antsig"><b>Artículo Anterior:</b><br /><a href="/manual-html/etiqueta-body-cuerpo-de-una-pagina-html.html">Etiqueta BODY - Cuerpo de una página HTML</a></div>
+<p> </p>
+	</div>
+</article>
+
+	</div><aside id="aside">
+	</aside>
+	<script defer src="/js/ads.js"></script>
+</div>
+<div id="down"></div>
+<footer>
+    <p>© Copyright - Acerca de HTML - Todos los derechos reservados<br />
+    Queda prohibida la distribución total o parcial del contenido de este sitio web sin el previo consentimiento del autor.</p>
+</footer>
+</body>
+</html>

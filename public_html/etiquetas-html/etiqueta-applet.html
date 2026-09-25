@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+   xml:lang="es-es" lang="es-es" >
+
+<head>
+    <base href="https://acercadehtml.com/etiquetas-html/etiqueta-applet.html" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="etiquetas html, html etiquetas, etiquetas de html, etiquetas en html, todas las etiquetas de html, etiquetas html todas, etiquetas html5, html5 etiquetas" />
+	<meta name="author" content="Israel Romero" />
+	<meta name="description" content="Las etiquetas HTML son fragmentos de texto rodeados por corchetes angulares , que tienen funciones y usos específicos y se utilizan para escribir código HTML" />
+	<title>Etiqueta applet - Acerca de HTML</title>
+    <link rel="stylesheet" href="/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="/css/light.css" type="text/css" />
+    <link rel="stylesheet" href="/css/articles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<header>
+    <div id="header">
+    	<div id="logoDiv">
+            <a href="/"><img src="/images/logo.png" alt="Acerca de HTML" id="logoImg" /></a>
+        </div><nav>
+    	<ul><li><a href="/">Inicio</a></li><li><a href="/manual-html.html">Manual HTML</a></li><li class="actual"><a href="/etiquetas-html.html">Etiquetas HTML</a></li></ul>
+    	</nav>
+    </div>
+</header>
+<div id="up"></div>
+<div id="page">
+    <div id="contenido">
+    	<div aria-label="Breadcrumbs" role="navigation">
+			<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+				<li>Está aquí: &#160;</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/"><span itemprop="name">Inicio</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="1">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/etiquetas-html.html"><span itemprop="name">Etiquetas HTML</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="2">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<span itemprop="name">Etiqueta applet</span>
+					<meta itemprop="position" content="3">
+				</li>
+			</ul>
+		</div>
+
+		<article itemscope itemtype="https://schema.org/Article">
+		<meta itemprop="inLanguage" content="es-ES" />
+		<h1 itemprop="headline">Etiqueta applet</h1>
+	<div itemprop="articleBody">
+		<h2>¿Para qué sirve?</h2>
+<p>La etiqueta &lt;applet&gt; sirve para incrustar en la página un applet de Java, sin embargo, esta etiqueta está obsoleta y ya no se deberá usar a partir de la versión HTML 5, en su lugar deberá usarse la etiqueta &lt;object&gt;.</p>
+<h2>¿Qué es un applet?</h2>
+<p>Un applet es un programa, componente o aplicación que se ejecuta dentro del contexto de otro programa o aplicación, por ejemplo un videojuego escrito en Java que se ejecuta en una página web desde un navegador como google Chrome o Firefox, ahí es donde entra en funcionamiento la etiqueta &lt;applet&gt;</p>
+<p>En este ejemplo el navegador descarga y ejecuta el applet pero es necesario que el usuario tenga instalado Java y habilitada la ejecución de este tipo de programas, en caso contrario la página cargaría pero el applet no se ejecutaría al ser bloqueada por el navegador.</p>
+<h2>Ejemplo de uso:</h2>
+<div class="cajacode"><code>&lt;applet code=“mi_applet.class” width=“640” height=“480”&gt; &lt;/applet&gt;</code></div>
+<p>En este ejemplo se inserta <b>mi_applet.class</b> indicada en el atributo <b>code</b> desplegado en pantalla con un ancho de 640x480 pixeles.</p>
+<h2>Atributos:</h2>
+<p>Los atributos obligatorios para esta etiqueta son <b>code</b>, <b>width</b> y <b>height</b>.</p>
+<div class="tab">
+<p><b>Atributo:</b> code<br /><b>Descripción:</b> Especifica la ruta del applet que deseamos incrustar.<br /><b>Valor:</b> La ruta donde está nuestra applet.</p>
+<p><b>Atributo:</b> width<br /><b>Descripción:</b> Especifica el ancho del área donde se visualizará el applet.<br /><b>Valor:</b> Valor numérico del ancho.</p>
+<p><b>Atributo:</b> height<br /><b>Descripción:</b> Especifica el alto del área donde se visualizará el applet.<br /><b>Valor:</b> Valor numérico de la altura.</p>
+</div>
+<p>Además de los tributos mencionados esta etiqueta no tiene atributos específicos, sin embargo se pueden usar todos los atributos globales de HTML.</p> 
+	</div>
+	</article>
+
+	</div><aside id="aside">
+    </aside>
+    <script defer src="/js/ads.js"></script>
+</div>
+<div id="down"></div>
+<footer>
+    <p>© Copyright - Acerca de HTML - Todos los derechos reservados<br />
+    Queda prohibida la distribución total o parcial del contenido de este sitio web sin el previo consentimiento del autor.</p>
+</footer>
+</body>
+</html>

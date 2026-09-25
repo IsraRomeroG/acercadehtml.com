@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+   xml:lang="es-es" lang="es-es" >
+
+<head>
+    <base href="https://acercadehtml.com/etiquetas-html/comentarios-html.html" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="etiquetas html, html etiquetas, etiquetas de html, etiquetas en html, todas las etiquetas de html, etiquetas html todas, etiquetas html5, html5 etiquetas" />
+	<meta name="author" content="Israel Romero" />
+	<meta name="description" content="Las etiquetas HTML son fragmentos de texto rodeados por corchetes angulares , que tienen funciones y usos específicos y se utilizan para escribir código HTML" />
+	<title>Comentarios en HTML - Acerca de HTML</title>
+    <link rel="stylesheet" href="/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="/css/light.css" type="text/css" />
+    <link rel="stylesheet" href="/css/articles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<header>
+    <div id="header">
+    	<div id="logoDiv">
+            <a href="/"><img src="/images/logo.png" alt="Acerca de HTML" id="logoImg" /></a>
+        </div><nav>
+    	<ul><li><a href="/">Inicio</a></li><li><a href="/manual-html.html">Manual HTML</a></li><li class="actual"><a href="/etiquetas-html.html">Etiquetas HTML</a></li></ul>
+    	</nav>
+    </div>
+</header>
+<div id="up"></div>
+<div id="page">
+    <div id="contenido">
+    	<div aria-label="Breadcrumbs" role="navigation">
+			<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+				<li>Está aquí: &#160;</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/"><span itemprop="name">Inicio</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="1">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/etiquetas-html.html"><span itemprop="name">Etiquetas HTML</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="2">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<span itemprop="name">Comentarios en HTML</span>
+					<meta itemprop="position" content="3">
+				</li>
+			</ul>
+		</div>
+
+		<article itemscope itemtype="https://schema.org/Article">
+		<meta itemprop="inLanguage" content="es-ES" />
+		<h1 itemprop="headline">Comentarios en HTML</h1>
+	<div itemprop="articleBody">
+		<p>En todos los lenguajes de programación existe los llamados <b>“<i>comentarios</i>”</b> y HTML (aunque no es un lenguaje de programación sino un lenguaje de marcado) también hace uso de los comentarios.</p>
+<p>Los comentarios son simples anotaciones escritas que solo pueden leerse directamente desde el código fuente, es decir, no se muestran en la parte visual de la página, son usados como anotaciones dirigidas al programador o editor lo cual permite que estos tenga una mayor comprensión del código, se podría decir que pueden usarse para "explicar" algunas partes del código o como notas personales o recordatorios.</p>
+<p>Un comentario no tiene ningun efecto en el funcionamiento de una página web, esto debido a que los comentarios son dirigidos hacia la persona que los lee y no hacia la computadora, entonces, cuando el navegador interpreta el código HTML simplemente ignora todo el texto que esté contenido dentro de un comentario.</p>
+ 
+<p>En HTML los comentarios pueden ocupar una o varias lineas, se escriben de la siguiente manera:</p>
+<div class="cajacode"><code>&lt;!—- Esto es un comentario de una sola línea –-&gt;<br /><br />&lt;!—- Esto es un<br />comentario en<br />varias lineas –-&gt;</code></div>
+<p>Un comentario en HTML inicia con <code>&lt;!--</code> y termina con <code>--&gt;</code> todo lo que esté escrito después de <code>&lt;!--</code> será considerado como parte del comentario, inclusive se puede agregar código HTML o de cualquier otro lenguaje y será ignorado por el navegador hasta encontrar el cierre del comentario <code>--&gt;</code>.</p>
+<p>Veamos un ejemplo aplicado a una página:</p>
+<div class="cajacode"><code>&lt;html&gt;<br />&lt;head&gt;<br />  &lt;title&gt;Prueba de comentarios HTML.&lt;/title&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />  &lt;p&gt;Este es un texto visible de la página.&lt;/p&gt;<br />  &lt;!-- Este es un comentario HTML,<br />  por lo tanto no será visible en el navegador,<br />  &lt;b&gt;Inclusive&lt;/b&gt; utilizo etiquetas HTML,&lt;br&gt;<br />  pero no servirán de nada. --&gt;<br />  &lt;p&gt;Aquí continúa el texto de la página.&lt;/p&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</code></div>
+<p>El resultado sería el siguiente:</p>
+<div class="cajaresultado">
+<p>Este es un texto visible de la página.</p>
+<!-- Este es un comentario HTML,
+por lo tanto no será visible en el navegador,
+<b>Inclusive</b> utilizo etiquetas HTML,<br>
+pero no servirán de nada. -->
+<p>Aquí continúa el texto de la página.</p>
+</div>
+<p>Podemos observar que en el resultado no se visualiza el comentario incluido.</p>
+	</div>
+	</article>
+
+	</div><aside id="aside">
+    </aside>
+    <script defer src="/js/ads.js"></script>
+</div>
+<div id="down"></div>
+<footer>
+    <p>© Copyright - Acerca de HTML - Todos los derechos reservados<br />
+    Queda prohibida la distribución total o parcial del contenido de este sitio web sin el previo consentimiento del autor.</p>
+</footer>
+</body>
+</html>

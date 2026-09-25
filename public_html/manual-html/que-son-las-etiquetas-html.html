@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+   xml:lang="es-es" lang="es-es" >
+
+<head>
+    <base href="https://acercadehtml.com/manual-html/que-son-las-etiquetas-html.html" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="manual html, manual de html, html manual, tutorial html, html tutorial, manual, tutorial, etiquetas html, etiquetas, articulos html, ejemplos html, tutorial, lenguaje html, crear paginas web, crear webs, crear paginas html" />
+	<meta name="author" content="Israel Romero" />
+	<meta name="description" content="Manual de HTML. En este manual encontrarás artículos que te ayudarán a aprender HTML para crear tus propias páginas web." />
+	<title>¿Que son las etiquetas HTML? - Acerca de HTML</title>
+    <link rel="stylesheet" href="/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="/css/light.css" type="text/css" />
+    <link rel="stylesheet" href="/css/articles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<header>
+    <div id="header">
+    	<div id="logoDiv">
+            <a href="/"><img src="/images/logo.png" alt="Acerca de HTML" id="logoImg" /></a>
+        </div><nav>
+    	<ul><li><a href="/">Inicio</a></li><li class="actual"><a href="/manual-html.html">Manual HTML</a></li><li><a href="/etiquetas-html.html">Etiquetas HTML</a></li></ul>
+    	</nav>
+    </div>
+</header>
+<div id="up"></div>
+<div id="page">
+    <div id="contenido">
+    	<div aria-label="Breadcrumbs" role="navigation">
+			<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+				<li>Está aquí: &#160;</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/"><span itemprop="name">Inicio</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="1">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/manual-html.html"><span itemprop="name">Manual HTML</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="2">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<span itemprop="name">¿Que son las etiquetas HTML?</span>
+					<meta itemprop="position" content="3">
+				</li>
+			</ul>
+		</div>
+
+		<article itemscope itemtype="https://schema.org/Article">
+		<meta itemprop="inLanguage" content="es-ES" />
+		<h1 itemprop="headline">¿Que son las etiquetas HTML?</h1>
+	<div itemprop="articleBody">
+		<p><b>Definición:</b> Las etiquetas HTML son fragmentos de texto rodeados por corchetes angulares <code>&lt; &gt;</code>, que tienen funciones y usos específicos y se utilizan para escribir código HTML.</p>
+<p>Las etiquetas o tags son la forma de escribir código HTML.</p>
+<p>En HTML existen etiquetas de apertura y etiquetas de cierre, tienen la forma: <code>&lt;etiqueta&gt; &lt;/etiqueta&gt;</code>. Donde <code>&lt;etiqueta&gt;</code> es la etiqueta de apertura y <code>&lt;/etiqueta&gt;</code> es la etiqueta de cierre indicada por la diagonal. HTML tiene definidas gran variedad de etiquetas para distintos usos.</p>
+<p>Aunque la mayoría de las etiquetas tienen su etiqueta de apertura y etiqueta de cierre, es importante aclarar que no todas las etiquetas tienen su correspondiente etiqueta de cierre.</p>
+<p>Algunos ejemplos de etiquetas son:</p>
+ 
+<table><caption>Etiquetas con etiqueta de cierre</caption>
+<tbody>
+<tr>
+<th>Apertura</th>
+<th>Cierre</th>
+</tr>
+<tr>
+<td><code>&lt;html&gt;</code></td>
+<td><code>&lt;/html&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;head&gt;</code></td>
+<td><code>&lt;/head&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;body&gt;</code></td>
+<td><code>&lt;/body&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;p&gt;</code></td>
+<td><code>&lt;/p&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>La etiqueta de apertura y la de cierre son las misma con la única diferencia de la diagonal "/" , es necesario la etiqueta de cierre para limitar el campo de acción de la etiqueta, por ejemplo a etiqueta <code>&lt;p&gt;</code> nos indica el inicio de un párrafo de texto y una vez que se escribe la etiqueta de apertura el navegador tomará como párrafo todo el texto que se encuentre después de dicha etiqueta hasta toparse con la etiqueta de cierre <code>&lt;/p&gt;</code> y así con las demás etiquetas según la función de cada una, la mayoría de las etiquetas de HTML son etiquetas de este tipo.</p>
+<table><caption>Etiquetas sin etiqueta de cierre</caption>
+<tbody>
+<tr>
+<th>Etiqueta</th>
+</tr>
+<tr>
+<td><code>&lt;br&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;img&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;hr&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;input&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Este segundo grupo de etiquetas no requieren de una etiqueta de cierre debido a que su campo de acción está limitado al lugar en donde se incluye la etiqueta.</p>
+<p>En el primer ejemplo vemos la etiqueta <code>&lt;br&gt;</code> que sirve para indica un salto de linea, creo que es fácil deducir porque no necesita etiqueta de cierre, pues es un elemento muy simple y el navegador no necesita que le digamos hasta donde "limitar" el campo de acción de esta etiqueta pues los saltos de linea son solo eso "un cambio de renglón y ya", si queremos mas de un salto de linea simplemente escribimos varios <code>&lt;br&gt;</code> seguidos, la segunda etiqueta <code>&lt;img&gt;</code> sirve para insertar una imagen en la página tampoco necesita etiqueta de cierre, ya que la etiqueta se debe ubicar en el lugar en donde queramos insertar la imagen, pero hace falta algo mas para completar la etiqueta ya que un simple "img" no nos dice nada acerca de la imagen, para ello existen los atributos.</p>
+<h2>Atributos de etiquetas.</h2>
+<p>Las etiquetas tienen atributos que nos sirven para especificar ciertos detalles de esa etiqueta, por ejemplo, especificar un color de texto o de fondo, el ancho y alto de algún elemento, su alineación, la ubicación de un documento o imagen, etc.</p>
+<p>El segundo caso del ejemplo anterior vimos que <code>&lt;img&gt;</code> sirve para insertar una imagen, pero para que la etiqueta funcione necesita de sus atributos, por medio de estos le daremos uso a la etiqueta.</p>
+<p>Los atributos se escriben dentro de la etiqueta de la siguiente forma:</p>
+<div class="cajacode"><code>&lt;etiqueta atributo1="algo" atributo2="algo"&gt;</code></div>
+<p>Ahora volviendo al ejemplo de la etiqueta <code>&lt;img&gt;</code> es necesario indicar en forma de un atributo la dirección y el nombre de la imagen que queremos que se muestre, esto de la siguiente manera:</p>
+<div class="cajacode"><code>&lt;img src="/carpeta/mi_imagen.jpg"&gt;</code></div>
+<p>Con lo anterior nuestra etiqueta <code>&lt;img&gt;</code> ya podrá mostrar la imagen deseada.</p>
+<p>Hay atributos específicos para cada etiqueta, en este ejemplo mostramos la etiqueta <code>&lt;img&gt;</code> con el mínimo requerido, pero puede llevar mas atributos, que no mencionaré aquí pues no es el tema a tratar, pero si hay que decir que a cualquier etiqueta de HTML se le puede agregar atributos, para algunas etiquetas como esta, será algo forzoso agregar el atributo, pero para otras podrá ser algo opcional, sin embargo, las etiquetas y sus atributos son la base del lenguaje HTML, y por medio de estas es como se construye una página web.</p>
+<div class="antsig"><b>Artículo Anterior:</b><br /><a href="/manual-html/que-es-html.html">¿Qué es HTML?</a></div>
+<div class="antsig"><b>Siguiente Artículo:</b><br /><a href="/manual-html/como-crear-una-pagina-html.html">Cómo crear una página HTML</a></div>
+	</div>
+	</article>
+
+	</div><aside id="aside">
+	</aside>
+	<script defer src="/js/ads.js"></script>
+</div>
+
+<div id="down"></div>
+<footer>
+    <p>© Copyright - Acerca de HTML - Todos los derechos reservados<br />
+    Queda prohibida la distribución total o parcial del contenido de este sitio web sin el previo consentimiento del autor.</p>
+</footer>
+</body>
+</html>

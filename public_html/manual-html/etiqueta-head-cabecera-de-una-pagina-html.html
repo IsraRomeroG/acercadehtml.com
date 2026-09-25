@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+   xml:lang="es-es" lang="es-es" >
+
+<head>
+    <base href="https://acercadehtml.com/manual-html/etiqueta-head-cabecera-de-una-pagina-html.html" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="manual html, manual de html, html manual, tutorial html, html tutorial, manual, tutorial, etiquetas html, etiquetas, articulos html, ejemplos html, tutorial, lenguaje html, crear paginas web, crear webs, crear paginas html" />
+	<meta name="author" content="Israel Romero" />
+	<meta name="description" content="Manual de HTML. En este manual encontrarás artículos que te ayudarán a aprender HTML para crear tus propias páginas web." />
+	<title>Etiqueta HEAD - Cabecera de una página HTML - Acerca de HTML</title>
+    <link rel="stylesheet" href="/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="/css/light.css" type="text/css" />
+    <link rel="stylesheet" href="/css/articles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<header>
+    <div id="header">
+    	<div id="logoDiv">
+            <a href="/"><img src="/images/logo.png" alt="Acerca de HTML" id="logoImg" /></a>
+        </div><nav>
+    	<ul><li><a href="/">Inicio</a></li><li class="actual"><a href="/manual-html.html">Manual HTML</a></li><li><a href="/etiquetas-html.html">Etiquetas HTML</a></li></ul>
+    	</nav>
+    </div>
+</header>
+<div id="up"></div>
+<div id="page">
+    <div id="contenido">
+    	<div aria-label="Breadcrumbs" role="navigation">
+			<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+				<li>Está aquí: &#160;</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/"><span itemprop="name">Inicio</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="1">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="/manual-html.html"><span itemprop="name">Manual HTML</span></a>
+					<span><img src="/images/arrow.png" alt=">" /></span>
+					<meta itemprop="position" content="2">
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					<span itemprop="name">Etiqueta HEAD - Cabecera de una página HTML</span>
+					<meta itemprop="position" content="3">
+				</li>
+			</ul>
+		</div>
+
+		<article itemscope itemtype="https://schema.org/Article">
+		<meta itemprop="inLanguage" content="es-ES" />
+		<h1 itemprop="headline">Etiqueta HEAD - Cabecera de una página HTML</h1>
+	<div itemprop="articleBody">
+		<p>En el artículo anterior echamos un vistazo a la estructura de un documento HTML y mencionamos que se divide en dos partes, el HEAD y el BODY, ahora vamos a tratar el tema del HEAD mas a fondo.</p>
+<p>HEAD traducido del ingles al español significa "cabeza", por eso a esta parte del documento la llamamos cabecera. En el documento HTML comienza con la etiqueta <code>&lt;head&gt;</code> y se indica su final con la etiqueta <code>&lt;/head&gt;</code>, se escribe así:</p>
+<div class="cajacode"><code>&lt;html&gt;<br />  &lt;head&gt;<br />    Todo lo que esté aquí pertenece al HEAD<br />  &lt;/head&gt;<br />  &lt;body&gt;<br />  &lt;/body&gt;<br />&lt;/html&gt;</code></div>
+<p>El HEAD es la parte donde se incluye la información acerca del documento, podríamos atrevernos a decir que el HEAD es una sección de un documento HTML meramente "técnica e informativa", pues la mayoría de esta información no la muestra el navegador al usuario e inclusive pudiéramos dejarla vacía y esto no afectaría al funcionamiento o la forma en que se visualiza la página, y si bien el HEAD de un documento HTML pudiera ir vacío siempre es mejor darles la suficiente importancia a las etiquetas que el HEAD contiene, mucho mas aun si nuestro objetivo es publicar nuestro trabajo en la web, pues muchas de las etiquetas del HEAD son importantes para los buscadores y para un buen posicionamiento en los resultados de búsqueda.</p>
+ 
+<p>Bueno vamos al grano y conozcamos las etiquetas del HEAD.</p>
+<p><b>TITLE:</b></p>
+<div class="cajacode"><code>&lt;head&gt;<br />  &lt;title&gt;Título de la página&lt;/title&gt;<br />&lt;/head&gt;</code></div>
+<p>Un elemento del HEAD visible desde el navegador, muy importante para los buscadores pues es el texto que se visualiza en los resultados de búsqueda.</p>
+<div class="google-auto-placed ap_container">
+<p>Me parece importante señalar que este elemento nada tiene que ver con el nombre del archivo pues son dos cosas totalmente distintas e independientes una de la otra, por ejemplo podríamos tener un archivo llamado index.html y en el código un <code>&lt;title&gt;</code>Página principal - Bienvenido<code>&lt;/title&gt;</code> y esto estaría bien.</p>
+<p><b>META:</b></p>
+<div class="cajacode"><code>&lt;head&gt;<br />  &lt;meta name="description" content="Artículos sobre HTML" /&gt;<br />  &lt;meta name="keywords" content="HTML,manual de HTML" /&gt;<br />  &lt;meta name="author" content="Israel Romero" /&gt;<br />  &lt;meta http-equiv="refresh" content="30" /&gt;<br />&lt;/head&gt;</code></div>
+<p>Una etiqueta con atributos. La función de esta etiqueta va a depender totalmente de los atributos y valores que contenga, en nuestro ejemplo las primeras 3 tienen los atributos "name" y "content" pero tienen valores diferentes, la primera (con valor "description") indica la descripción de la página, la segunda indica las palabras clave con la que los buscadores deberían de relacionarla, en el ejemplo se pretende que los buscadores muestren la pagina en sus resultados cuando alguien busque "HTML" o "manual de HTML", la tercera incluye el nombre del autor de la página. Ahora la cuarta etiqueta tiene atributos diferentes, en este caso esta etiqueta le dice al navegador que la página se debe actualizar cada 30 segundos. Hay algunos otros argumentos posibles para la etiqueta <code>&lt;meta&gt;</code>, pero el tema principal aquí es el HEAD por lo que tocará hablar del META mas a fondo en otro post.</p>
+<p><b>STYLE:</b></p>
+<div class="cajacode"><code>&lt;head&gt;<br />  &lt;style type="text/css"&gt;<br />    p {color:blue;}<br />  &lt;/style&gt;<br />&lt;/head&gt;</code></div>
+<p>Con esta etiqueta se puede incluir código CSS dentro del documento HTML, en este ejemplo se le da un color azul a los párrafos, es decir a los fragmentos de texto contenidos por las etiquetas <code>&lt;p&gt; &lt;/p&gt;</code>.</p>
+<p><b>SCRIPT:</b></p>
+<div class="cajacode"><code>&lt;head&gt;<br />  &lt;script type="text/javascript"&gt;<br />    document.write("Hola")<br />  &lt;/script&gt;<br />&lt;/head&gt;</code></div>
+<p>Otra mas para agregar código de lenguajes ajenos a HTML, en este ejemplo agregamos codigo de javascript que lo unico que hace es mostrarnos un texto que dice "Hola".</p>
+<p>Bueno creo que con estas 4 etiquetas de ejemplo queda mas claro lo que es el HEAD y su función en un documento HTML, otras etiquetas que pueden ir en esta sección son:</p>
+<div class="cajacode"><code>    &lt;base&gt;<br />    &lt;link&gt;<br />    &lt;noscript&gt; &lt;/noscript&gt;</code></div>
+<p>Solo las menciono porque de explicarlas se extendería mas el artículo.</p>
+<div class="antsig"><b>Artículo Anterior:</b><br /><a href="/manual-html/como-crear-una-pagina-html.html">Cómo crear una página HTML</a></div>
+<div class="antsig"><b>Siguiente Artículo:</b><br /><a href="/manual-html/etiqueta-body-cuerpo-de-una-pagina-html.html">Etiqueta BODY - Cuerpo de una página HTML</a></div>
+<p> </p>
+</div>
+	</div>
+	</article>
+
+	</div><aside id="aside">
+    </aside>
+    <script defer src="/js/ads.js"></script>
+</div>
+<div id="down"></div>
+<footer>
+    <p>© Copyright - Acerca de HTML - Todos los derechos reservados<br />
+    Queda prohibida la distribución total o parcial del contenido de este sitio web sin el previo consentimiento del autor.</p>
+</footer>
+</body>
+</html>
