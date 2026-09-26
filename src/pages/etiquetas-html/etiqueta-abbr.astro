@@ -1,0 +1,9 @@
+---
+import LegacyPage from "../../layouts/LegacyPage.astro";
+import { createLegacyPage } from "../../lib/legacy";
+import source from "../../../public_html/etiquetas-html/etiqueta-abbr.html?raw";
+
+const page = createLegacyPage(source, "/etiquetas-html/etiqueta-abbr.html");
+---
+
+<LegacyPage page={page} />

@@ -1,0 +1,9 @@
+---
+import LegacyPage from "../../layouts/LegacyPage.astro";
+import { createLegacyPage } from "../../lib/legacy";
+import source from "../../../public_html/etiquetas-html/etiqueta-area-poligono.html?raw";
+
+const page = createLegacyPage(source, "/etiquetas-html/etiqueta-area-poligono.html");
+---
+
+<LegacyPage page={page} />

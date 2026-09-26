@@ -1,0 +1,9 @@
+---
+import LegacyPage from "../../layouts/LegacyPage.astro";
+import { createLegacyPage } from "../../lib/legacy";
+import source from "../../../public_html/manual-html/colores-html-hexadecimal.html?raw";
+
+const page = createLegacyPage(source, "/manual-html/colores-html-hexadecimal.html");
+---
+
+<LegacyPage page={page} />

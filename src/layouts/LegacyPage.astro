@@ -1,0 +1,26 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import type { LegacyPage as LegacyPageData } from "../lib/legacy";
+
+const { page } = Astro.props as { page: LegacyPageData };
+const isManual = page.path.startsWith("/manual-html");
+const category = isManual ? { title: "Manual HTML", href: "/manual-html.html" } : { title: "Etiquetas HTML", href: "/etiquetas-html.html" };
+const isCategoryPage = page.path === category.href;
+---
+
+<BaseLayout title={page.title} description={page.description} currentPath={page.path}>
+	<nav class="breadcrumbs" aria-label="Ruta de navegación">
+		<a href="/">Inicio</a>
+		<span aria-hidden="true">/</span>
+		{isCategoryPage ? (
+			<span aria-current="page">{category.title}</span>
+		) : (
+			<>
+				<a href={category.href}>{category.title}</a>
+				<span aria-hidden="true">/</span>
+				<span aria-current="page">{page.title}</span>
+			</>
+		)}
+	</nav>
+	<section class="content-panel legacy-content" set:html={page.bodyHtml}></section>
+</BaseLayout>

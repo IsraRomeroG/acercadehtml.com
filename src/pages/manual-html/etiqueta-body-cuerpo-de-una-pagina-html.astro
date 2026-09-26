@@ -1,0 +1,9 @@
+---
+import LegacyPage from "../../layouts/LegacyPage.astro";
+import { createLegacyPage } from "../../lib/legacy";
+import source from "../../../public_html/manual-html/etiqueta-body-cuerpo-de-una-pagina-html.html?raw";
+
+const page = createLegacyPage(source, "/manual-html/etiqueta-body-cuerpo-de-una-pagina-html.html");
+---
+
+<LegacyPage page={page} />

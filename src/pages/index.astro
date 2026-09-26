@@ -1,17 +1,64 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getLegacyPosts } from "../lib/legacy";
+import legacySource from "../../public_html/index.html?raw";
 
+const posts = getLegacyPosts(legacySource);
+const description = "Aprende HTML desde cero con un manual claro, ejemplos prácticos y una guía completa de etiquetas.";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Inicio" description={description} currentPath="/">
+	<section class="home-hero">
+		<div class="hero-copy">
+			<p class="eyebrow">HTML explicado con claridad</p>
+			<h1>Aprende HTML,<br /><span>paso a paso.</span></h1>
+			<p class="hero-intro">Descubre cómo se construyen las páginas web con explicaciones sencillas, ejemplos y una guía práctica para empezar desde cero.</p>
+			<div class="hero-actions">
+				<a class="button button-primary" href="/manual-html.html">Empezar el manual <span aria-hidden="true">→</span></a>
+				<a class="button button-secondary" href="/etiquetas-html.html">Explorar etiquetas</a>
+			</div>
+			<p class="hero-note"><span aria-hidden="true">✓</span> Lecturas breves · Ejemplos prácticos · Sin experiencia previa</p>
+		</div>
+		<div class="hero-visual" aria-label="Ejemplo sencillo de código HTML">
+			<div class="code-card">
+				<div class="code-card-bar"><span></span><span></span><span></span><b>mi-pagina.html</b></div>
+				<pre><code><span class="code-muted">&lt;!doctype html&gt;</span>
+<span class="code-tag">&lt;html</span> <span class="code-attr">lang</span>=<span class="code-value">"es"</span><span class="code-tag">&gt;</span>
+  <span class="code-tag">&lt;h1&gt;</span>Hola, mundo<span class="code-tag">&lt;/h1&gt;</span>
+  <span class="code-tag">&lt;p&gt;</span>Mi primera página.<span class="code-tag">&lt;/p&gt;</span>
+<span class="code-tag">&lt;/html&gt;</span></code></pre>
+				<p class="code-card-caption">La estructura de una página empieza aquí.</p>
+			</div>
+			<div class="hero-sticker"><span>01</span><small>Empieza<br />por lo básico</small></div>
+		</div>
+	</section>
+
+	<section class="home-section articles-section" aria-labelledby="articles-title">
+		<div class="section-heading">
+			<div>
+				<p class="eyebrow">Ideas para seguir aprendiendo</p>
+				<h2 id="articles-title">Explora los artículos</h2>
+			</div>
+			<a class="text-link" href="/manual-html.html">Ver el manual completo <span aria-hidden="true">→</span></a>
+		</div>
+		<div class="article-grid">
+			{posts.map((post, index) => (
+				<article class="article-card">
+					<div class="card-meta"><span class="card-number">{String(index + 1).padStart(2, "0")}</span><a href={post.sectionHref}>{post.section}</a></div>
+					<h3><a href={post.href}>{post.title}</a></h3>
+					<p class="card-excerpt" set:html={post.previewHtml}></p>
+					<a class="card-link" href={post.href}>Leer artículo <span aria-hidden="true">→</span></a>
+				</article>
+			))}
+		</div>
+	</section>
+
+	<section class="home-section start-section">
+		<div class="start-copy">
+			<p class="eyebrow">Tu siguiente paso</p>
+			<h2>De la primera etiqueta a tu primera página.</h2>
+			<p>Avanza por el manual en orden o consulta directamente la etiqueta que necesitas. Cada tema incluye ejemplos para que puedas probarlo por tu cuenta.</p>
+		</div>
+		<a class="button button-light" href="/manual-html/introduccion.html">Abrir la introducción <span aria-hidden="true">→</span></a>
+	</section>
+</BaseLayout>
